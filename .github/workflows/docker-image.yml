@@ -35,6 +35,7 @@ jobs:
         with:
           registry: ${{ env.REGISTRY }}
           username: douman
+          ## Set in repo Settings->Secrets->New repository secret
           password: ${{ secrets.DOCKER_TOKEN }}
 
       # Build and push Docker image with Buildx (don't push on PR)
