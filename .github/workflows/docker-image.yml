@@ -53,4 +53,4 @@ jobs:
           context: .
           push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ env.IMAGE_NAME }}:dev-latest
-          build-args: "EXTRA_APT_PACKS=procps heaptrack gdb"
+          build-args: "EXTRA_APT_PACKS=procps heaptrack gdb rsync"
