@@ -1,4 +1,4 @@
-FROM debian:bullseye-slim
+FROM debian:stable-slim
 
 ARG EXTRA_APT_PACKS=''
 
